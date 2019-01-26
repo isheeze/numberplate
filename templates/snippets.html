@@ -1,0 +1,21 @@
+{% macro header(title, menu, url) -%}
+    <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{{ title }}
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	<body>
+		<header><a href="{{url_for('index')}}"><span class="logo">L O G O</span></a><span class="login"><a href="{{ url }}">{{ menu }}</a></span></header>
+{%- endmacro %}
+
+{%- macro footer() -%}
+    </body>
+</html>	
+{%- endmacro %}

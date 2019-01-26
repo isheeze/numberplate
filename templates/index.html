@@ -1,0 +1,12 @@
+{% import 'snippets.html' as sn %}
+{{ sn.header(user if user else 'Home', 'Login', url_for('.login', lt='login')) }}
+
+		<div class="content container-fluid">
+			<div class="col-md-6 txt">
+				Discover the Things<br> near You.
+				<br><a class="dark-btn" href="{{ url_for('.login', lt='signup') }}">Sign Up</a><a class="learn" href="#">Learn More</a>
+			</div>
+			<div class="col-md-6"><img src="{{ url_for('static', filename='img/homepagecar.png') }}"></div>
+		</div>
+
+{{ sn.footer() }}	

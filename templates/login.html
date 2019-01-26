@@ -1,0 +1,73 @@
+{% import 'snippets.html' as sn %}
+{{ sn.header(lt, 'Login' if lt == 'signup' else 'Sign up', url_for('.login', lt='login') if lt == 'signup' else url_for('.login', lt='signup')) }}
+
+		<div class="content container-fluid">
+
+			{% if lt == 'login' %}
+			<form class="cred-form container-fluid">
+				<h2>Login</h2>
+
+				<div class="row">
+				<label class="col-md-12">Username</label>
+				<input class="col-md-12 field" type="text">
+				</div>
+
+				<div class="row">
+				<label class="col-md-12">Password</label>
+				<input class="col-md-12 field" type="password">
+				</div>
+
+				<div class="row">
+				<label class="col-md-12">Don't have any account? <a href="{{ url_for('.login', lt='signup') }}">Sign up</a></label>
+				</div>
+
+				<div class="row">
+				<input class="col-md-12 submit" type="submit" value="Login">
+				</div>
+
+			</form>
+			{% else %}
+			<form class="cred-form container-fluid">
+				<h2>Sign up</h2>
+
+				<div class="row">
+				<label class="col-md-6">First Name</label>
+				<label class="col-md-6">Last Name</label>
+				<input class="col-md-5 field" type="text">
+				<div class="col-md-1"></div>
+				<input class="col-md-6 field" type="text">
+				</div>
+
+				<div class="row">
+				<label class="col-md-12">Email</label>
+				<input class="col-md-12 field" type="email">
+				</div>
+
+				<div class="row">
+				<label class="col-md-12">Username</label>
+				<input class="col-md-12 field" type="text">
+				</div>
+
+				<div class="row">
+				<label class="col-md-12">Password</label>
+				<input class="col-md-12 field" type="password">
+				</div>
+
+				<div class="row">
+				<label class="col-md-12">Confirm Password</label>
+				<input class="col-md-12 field" type="password">
+				</div>
+
+				<div class="row">
+				<label class="col-md-12">Already have an account? <a href="{{ url_for('.login', lt='login') }}">Login</a></label>
+				</div>
+
+				<div class="row">
+				<input class="col-md-12 submit" type="submit" value="Sign up">
+				</div>
+
+			</form>
+			{% endif %}
+		</div>
+		
+{{ sn.footer() }}	

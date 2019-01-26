@@ -1,0 +1,87 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+header{
+	width: 100%;
+    margin: 0px;
+    box-shadow: 0px 0px 10px -4px;
+    padding: 15px 60px;
+}
+header .login{
+    position: absolute;
+    right: 60px;
+}
+.content{
+	min-height: calc(100vh - 63px);
+}
+.content img{
+	width: 440px;
+	margin-top: 10%;
+}
+.txt{
+	font-family: 'Nunito', sans-serif;
+	font-size: 40px;
+    padding: 150px;
+}
+.txt a{
+	font-size: 15px;
+    padding: 10px 20px;
+    margin: 0px 2px;
+    display: inline-block;
+    width: 145px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0px 2px 9px -4px #387ecc;
+}
+.txt .learn{
+	background: white;
+    color: #337ab7;
+}
+.dark-btn{
+	background: #45a9ff;
+    color: white;
+}
+.cred-form{
+	width: 500px;
+    margin: 50px auto;
+    box-shadow: 4px 4px 20px -6px #45a9ff;
+    padding: 50px;
+    border-radius: 5px;
+    background: #45a9ff;
+}
+.cred-form h2{
+    margin: 0px;
+    margin-bottom: 25px;
+}
+.cred-form label{
+	color: #fff;
+}
+.cred-form .field{
+	border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+    box-shadow: 0px 0px 20px 0px #0980ef;
+}
+
+.cred-form .field:focus{
+	outline: none;
+}
+
+.submit{
+	padding: 10px 20px;
+    font-weight: bold;
+    background: white;
+    border: none;
+    border-radius: 5px;
+}
